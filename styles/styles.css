@@ -1,0 +1,200 @@
+:root {
+    --background-color: #53058A;
+    --text-color: #53058A;
+    --card-background: #FFFFFF;
+}
+
+/* Resetar os estilos padroes dos navegadores */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    background-color: var(--card-background);
+    margin: 0 16px;
+    padding: 30px 37px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.qrcode-container {
+    background-color: var(--card-background);
+    max-width: 335px;
+    width: 75%;
+    padding: 25px;
+    border-radius: 23px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.qrcode {
+    width: 100%;
+    height: 100%;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.button {
+    flex: 1;
+    border-radius: 20px;
+    background-color: var(--card-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.button>img {
+    width: 23%;
+}
+
+.button>span {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+span,
+h1 {
+    color: var(--text-color);
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+}
+
+h1>strong {
+    font-size: 48px;
+    line-height: 39px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1024px) {
+    .card-container {
+        padding: 24px 30px;
+        gap: 20px;
+    }
+
+    .button-container {
+        gap: 14px;
+    }
+
+    .button>span {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h1>strong {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        padding: 20px 25px;
+        gap: 18px;
+    }
+
+    .button-container {
+        gap: 12px;
+    }
+
+    .button>span {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h1>strong {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        padding: 16px 20px;
+        gap: 16px;
+    }
+
+    .button-container {
+        gap: 10px;
+    }
+
+    .button>span {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h1>strong {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-container {
+        padding: 14px 18px;
+        gap: 14px;
+    }
+
+    .button-container {
+        gap: 8px;
+    }
+
+    .button>span {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h1>strong {
+        font-size: 32px;
+    }
+
+    .foguete {
+        width: 90px;
+    }
+}
+
+

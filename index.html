@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qrcode insta card</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <!-- card -->
+        <div class="card-container imate__animated animate__hinge">
+            <!-- Qr code -->
+            <div class="qrcode-container">
+                <img class="qrcode" src="imagens/qrcode.png" alt="QRcode da jornada de programador">
+            </div>
+            <!-- botoes de compartilhar e link -->
+            <div class="button-container">
+                <!-- botao de compartilhar  -->
+                <button id="compartilhar-perfil-button" class="button">
+                    <img src="imagens/icone-compartilhar.png" alt="icone de compartilhar">
+                    <span>compartilhar Perfil</span>
+                </button>
+                <!-- botao de copiar link -->
+                <button id="copiar-link-button" class="button" onclick="copiarlink()">
+                    <img src="imagens/icone-link.png" alt="icone de copiar link">
+                    <span id="copiar-link-text">copiar link</span>
+                </button>
+            </div>
+            <h1>
+                visite meu perfil<br>
+                <strong> I g o r <br> B o r g n e s </strong>
+            </h1>
+            <img class="foguete" src="imagens/foguete.png" alt="icone do foguete">
+        </div>
+    </main>
+    <script src="scripts/events.js"></script>
+</body>
+
+</html>
